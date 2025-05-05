@@ -3,9 +3,7 @@ services:
     name: gumshuda-backend
     runtime: python
     buildCommand: |
-      apt-get update && apt-get install -y cmake libboost-all-dev libopenblas-dev
-      export MAKEFLAGS="-j2"  # Limit parallel jobs to reduce resource usage
-      pip install --upgrade pip  # Upgrade pip to the latest version
+      pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: uvicorn core.manage:app --host 0.0.0.0 --port 10000
     envVars:
