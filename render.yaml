@@ -2,8 +2,9 @@ services:
   - type: web
     name: gumshuda-backend
     runtime: python
+    pythonVersion: 3.10  # ✅ Downgraded to Python 3.10
     buildCommand: |
-      pip install --upgrade pip
+      apt-get update && apt-get install -y cmake libboost-all-dev libopenblas-dev
       pip install -r requirements.txt
     startCommand: uvicorn core.manage:app --host 0.0.0.0 --port 10000
     envVars:
