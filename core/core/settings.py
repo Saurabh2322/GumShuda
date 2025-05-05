@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core.missingperson',
+    'core.core.missingperson',
 
 ]
 EXTERNAL_APPS = ['missingperson']
