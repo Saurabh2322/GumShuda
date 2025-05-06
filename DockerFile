@@ -1,15 +1,25 @@
-# Use a base image with dlib + face_recognition already installed
+# Use a base image with dlib + face_recognition preinstalled
 FROM ageitgey/face-recognition
 
-# Set the working directory inside the container
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set work directory
 WORKDIR /app
 
-# Install your app's Python dependencies
+# Install dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy the rest of your application code
+# Copy project files
 COPY . .
 
-# Set the default command to run the Django app
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Collect static files (optional, if you serve static via Django)
+# RUN python manage.py collectstatic --noinput
+
+# Expose the port Render expects
+EXPOSE 10000
+
+# Run the application with Gunicorn
+CMD ["gunicorn", "core.core.wsgi:application", "--bind", "0.0.0.0:10000"]
