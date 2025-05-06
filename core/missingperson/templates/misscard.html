@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Person Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .person-details {
+            text-align: left;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .person-details p {
+            margin: 15px 0;
+        }
+
+        .person-details strong {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Missing Person Details</h1>
+</header>
+
+<div class="container">
+    <div class="person-details">
+        <h2>{{ person.first_name }} {{ person.last_name }}</h2>
+        <p><strong>Father's Name:</strong> {{ person.father_name }}</p>
+        <p><strong>Address:</strong> {{ person.address }}</p>
+        <p><strong>Date of Birth:</strong> {{ person.date_of_birth }}</p>
+        <p><strong>Aadhar Number:</strong> {{ person.aadhar_number }}</p>
+        <p><strong>Missing From:</strong> {{ person.missing_from }}</p>
+        <p><strong>Email:</strong> {{ person.email }}</p>
+        <p><strong>Phone Number:</strong> {{ person.phone_number }}</p>
+        <p><strong>Gender:</strong> {{ person.gender }}</p>
+    </div>
+</div>
+
+</body>
+</html>

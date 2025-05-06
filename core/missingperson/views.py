@@ -214,3 +214,10 @@ def update_person(request, person_id):
         return redirect('missing')  # Redirect to the missing view after editing
 
     return render(request, 'edit.html', {'person': person})
+
+from django.shortcuts import render
+
+# Create a view for the 'locations' page
+def location(request):
+    # Your logic here (e.g., fetching data, rendering a template, etc.)
+    return render(request, 'location.html')  # Make sure the template exists
