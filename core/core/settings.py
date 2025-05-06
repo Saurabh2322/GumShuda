@@ -40,9 +40,6 @@ INSTALLED_APPS = [
     'core.missingperson',
 
 ]
-EXTERNAL_APPS = ['core.missingperson']
-INSTALLED_APPS += EXTERNAL_APPS
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
