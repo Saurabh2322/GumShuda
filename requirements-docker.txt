@@ -1,0 +1,11 @@
+Django==5.2
+gunicorn==23.0.0
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+Pillow==10.4.0
+requests==2.32.3
+twilio==9.6.0
+click==8.1.8
+face-recognition-models==0.3.0
+dlib-bin==20.0.1
+whitenoise==6.9.0
