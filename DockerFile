@@ -21,7 +21,7 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir --no-deps face-recognition==1.3.0
 
 COPY . .
-RUN cd core && python manage.py collectstatic --noinput
+RUN cd core && python manage.py collectstatic --noinputs
 
 EXPOSE 10000
 

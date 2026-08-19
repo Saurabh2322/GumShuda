@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/media/img/favicon.png" rel="icon">
-  <link href="/media/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -81,7 +82,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="/media/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -176,77 +177,6 @@
     </section>
     <!-- End Services Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>At GumShuda Rescue, our strength lies in the dedicated individuals who form our core team. Comprising experienced professionals and passionate advocates, our team is committed to leveraging technology for a noble cause.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="/media/img/team/dp.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Saurabh Singh</h4>
-                <span>Lead Developer</span>
-                <p>Saurabh our coding virtuoso.Excellent problem-solving skills and experience in software development.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/saurabh-singh-2205b01a9/"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="/media/img/team/dp.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Agrasen Patel</h4>
-                <span>AI Specialist</span>
-                <p> Agrasen is our AI guru, specializing in deep learning. With years of experience in AI research and development.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/agrasen-patel-4a098423a/"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="/media/img/team/dp.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ankit Maurya</h4>
-                <span>UI/UX Designer</span>
-                <p>Ankit is the creative visionary who ensures our app is not only functional but also aesthetically pleasing</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/ankit-maurya-856355280/"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="/media/img/team/dp.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rohit Keshari</h4>
-                <span>Developer</span>
-                <p>Rohit our Excellent problem-solver and experience in software development.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/rohit-keshari-1a303125a/"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="pricing">
